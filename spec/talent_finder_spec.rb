@@ -23,9 +23,9 @@ describe TalentFinder do
 			expect(TalentFinder.search(@json_data, @location)).to be_truthy
 		end 
 
-		# it 'returns names' do
-		# 	output = TalentFinder.search(@json_data, @location)
-		# 	expect(output).to include "Homer Simpson" && "Krusty the Clown"
-		# end 
+		it 'returns names' do
+			output = TalentFinder.search(@json_data, @location)
+			expect(output).to include "Homer Simpson" && "Krusty the Clown"
+		end 
 	end 
 end 

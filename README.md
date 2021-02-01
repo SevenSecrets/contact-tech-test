@@ -1,5 +1,9 @@
 # Contact Tech Test
 
+## Usage
+
+In order to use the Talent Finder search you just need to call `TalentFinder.search(json_data, location)` where the json_data is json-formatted data in the same format as the example below, and location is a (case insensitive) string. The method will return an array of names which match the location.
+
 ## Summary
 
 Contact holds a lot of data on the talent we work with – think their locations, ages, hair colour, eye colour, etc. We often need to filter a big list of talent based on certain criteria – for example, the location they're based in.

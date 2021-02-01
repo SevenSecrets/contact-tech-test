@@ -1,7 +1,12 @@
+require 'json'
+
 class TalentFinder
 
 	def self.search(json_data, location)
-		@json_data = json_data
-		@location = location
+		data = JSON.parse(json_data)
+		names = data.map { |person|
+			person["name"] if person["location"].casecmp(location).zero?
+		}.compact
+		names
 	end
 end 
