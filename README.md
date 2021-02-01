@@ -50,3 +50,10 @@ Your program should output:
 Homer Simpson
 Krusty the Clown
 ```
+
+## Personal Notes
+
+- One search method, which takes data and location params (based on spec, better than taking both as params for each new instance and better than taking json data as init param then taking location param for search method)
+- Searching through things involves Big O stuff usually, but bc this is Ruby that isn't as big a concern since it has all the inbuilt methods
+- Make sure you include error handling
+- Allow for extension of functionality (presumably search by name or dob might be implemented later, or different output)
